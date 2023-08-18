@@ -1,1 +1,1 @@
-Repositório para fins de estudo do framework vue.js
+Repositório para fins educativos do framework vue.js
