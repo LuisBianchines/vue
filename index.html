@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="src/app.js" defer></script>
+    <script defer src="src/app.js"></script>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <form id ="app-form">
+            <input type="text" v-model= "input_name" placeholder="Digite o seu nome">
+            <input type="number" v-model= "input_age" placeholder="Digite a sua idade">
+            <input type="submit" value="Enviar" v-on:click = "submitForm">
+        </form>
+        <p>O meu nome é: {{ name }} e tenho {{ idade }} anos </p>
+        <p>Data Binding: {{ input_name }}</p>
+    </div>
 </body>
 </html>
